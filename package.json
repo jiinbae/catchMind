@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev:server": "nodemon --exec babel-node src/server",
-    "build:styles": "gulp styles"
+    "dev:assets": "gulp"
   },
   "repository": {
     "type": "git",
@@ -21,9 +21,13 @@
     "@babel/core": "^7.10.3",
     "@babel/node": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
+    "@babel/register": "^7.10.3",
+    "autoprefixer": "^9.8.2",
     "eslint": "^7.3.1",
     "express": "^4.17.1",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
     "gulp-sass": "^4.1.0",
     "morgan": "^1.10.0",
     "node": "^14.4.0",
