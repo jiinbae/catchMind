@@ -4,7 +4,7 @@
   "description": "real time",
   "main": "index.js",
   "scripts": {
-    "dev:server": "nodemon --exec babel-node src/server",
+    "dev:server": "nodemon --exec babel-node src/server --ignore assets/ --ignore src/static",
     "dev:assets": "gulp"
   },
   "repository": {
@@ -23,6 +23,7 @@
     "@babel/preset-env": "^7.10.3",
     "@babel/register": "^7.10.3",
     "autoprefixer": "^9.8.2",
+    "babelify": "^10.0.0",
     "del": "^5.1.0",
     "eslint": "^7.3.1",
     "express": "^4.17.1",
