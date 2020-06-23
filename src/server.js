@@ -15,7 +15,7 @@ app.get("/", (req, res) =>
     res.render("home", {events: JSON.stringify(events) })
 );
 
-const handleListening = () => console.log(`Server running: http://localhost:${PORT}`);
+const handleListening = () => console.log(`✅ Server running: http://localhost:${PORT}`);
 
 const server = app.listen(PORT, handleListening);
 
