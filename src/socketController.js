@@ -12,8 +12,13 @@ const socketController = socket => {
         broadcast(events.disconnected, { nickname: socket.nickname });
     });
 
-    socket.on(events.sendMsg, () => {
-        broadcast(event.newMsg, { message, nickname: socket.nickname });
+    socket.on(events.sendMsg, () => 
+        broadcast(event.newMsg, { message, nickname: socket.nickname })
+    );
+
+    socket.on(events.strokePath, ({ x, y }) => {
+        broadcast(events.strokedPath, { x ,y });
+        console.log(x,y);
     });
 };
 
